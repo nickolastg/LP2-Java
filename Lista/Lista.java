@@ -36,16 +36,16 @@ public class Lista<T> {
         return this.items.get(index);
     }
 
-    public void getAllItems(Map<Integer, String> teste) {
-        Iterator<Integer> it = teste.keySet().iterator();
+    public void getAllItems(Map<Integer, String> element) {
+        Iterator<Integer> it = element.keySet().iterator();
         while(it.hasNext()) {
-            System.out.println(teste.get(it.next()));
+            System.out.println(element.get(it.next()));
         }
     }
 
     public Object middleItem(){
         if (this.items.size() % 2 == 0) {
-            throw new IllegalArgumentException("Lista com tamanho par n„o possui elemento do meio"); 
+            throw new IllegalArgumentException("Lista com tamanho par n√£o possui elemento do meio"); 
 
             // Object item = items.get((items.size()/2) - 1);
             // return item;
